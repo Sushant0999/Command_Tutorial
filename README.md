@@ -27,7 +27,7 @@
 >docker ps
 >docker ps -a
 
-### #passing enviorment variables
+### passing enviorment variables
 >docker run --env
 
 ### passing name
@@ -96,11 +96,9 @@
 >docker build -t [imageName] .(here '.' means same whole directory)
 >docker build -t myubuntu .
 
-<h2>ERROR & SOLUTION</h2>
-### ERROR : <br>
-```
-failed to solve: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2573332828/Dockerfile: no such file or directory)
-```
+## ERROR & SOLUTION
+### 1. Error : <br>
+`failed to solve: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2573332828/Dockerfile: no such file or directory)`
 
 ### Solution:
 Provide full path

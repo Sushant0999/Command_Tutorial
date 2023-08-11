@@ -8,7 +8,7 @@
 >docker pull [imageName]
 >docker pull openjdk
 
-### pull specific images from hub
+### pull specific images version from hub
 >docker pull [imageName]:[tags]
 >docker pull openjdk:18
 

@@ -41,7 +41,7 @@
 >docker run -d MySQL <br>
 
 ### run docker in interactive mode
->docker run -it [imageName]
+>docker run -it [imageName] <br>
 >docker run -it -d openjdk <br>
 >docker run --name opjkdk -it -d openjdk <br>
 

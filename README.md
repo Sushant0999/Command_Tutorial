@@ -96,6 +96,14 @@
 >docker build -t [imageName] .(here '.' means same whole directory) <br>
 >docker build -t myubuntu . <br>
 
+
+### pushing dockerImage on docker hub 
+```
+1. Create a repository 'springboot_test'
+2. docker build -t sushant0999/springboot_test:sbp -f C:\Users\sushant.raj\dockerProject\docker-compose\javaTestCompose\Dockerfile .
+3. docker push sushant0999/springboot_test:sbp
+```
+
 ## ERROR & SOLUTION
 ### 1. Error : <br>
 `failed to solve: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2573332828/Dockerfile: no such file or directory)`

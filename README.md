@@ -83,7 +83,7 @@
 >docker logs [containerName/containerId] <br>
 
 ### creating docker image
->create a fileName "DockerFile" without quote <br>
+>create a fileName "Dockerfile" without quote <br>
 
 >FROM ubuntu [replace this with baseImage Name] <br>
 >WOKRDIR /usr/src [replace this with working directory] <br>
@@ -103,6 +103,9 @@
 2. docker build -t sushant0999/springboot_test:sbp -f C:\Users\sushant.raj\dockerProject\docker-compose\javaTestCompose\Dockerfile .
 3. docker push sushant0999/springboot_test:sbp
 ```
+
+### run a docker-compos-build
+>docker-compose build
 
 ## ERROR & SOLUTION
 ### 1. Error : <br>

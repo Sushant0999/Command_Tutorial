@@ -110,4 +110,4 @@
 
 ### Solution:
 Provide full path
-docker build -t image-name -f [C:\Users\sushant.raj\dockerProject\java\DockerFile] .
+docker build -t image-name -f [C:\Users\sushant.raj\dockerProject\java\Dockerfile] .

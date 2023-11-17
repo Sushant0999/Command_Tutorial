@@ -107,6 +107,21 @@
 ### run a docker-compos-build
 >docker-compose build
 
+### Push Docker Image to Hub
+```
+docker login
+docker tag local-image:tag username/repository:tag
+docker push username/repository:tag
+Login to Docker Hub
+docker login
+
+>Tag the local image
+docker tag my-local-image:latest your-dockerhub-username/repository-name:latest
+
+>Push the image to Docker Hub
+docker push your-dockerhub-username/repository-name:latest
+```
+
 ## ERROR & SOLUTION
 ### 1. Error : <br>
 `failed to solve: failed to read dockerfile: open /var/lib/docker/tmp/buildkit-mount2573332828/Dockerfile: no such file or directory)`

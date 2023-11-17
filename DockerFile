@@ -1,5 +1,0 @@
-FROM openjdk
-WORKDIR /usr/src/myapp
-COPY . /usr/src/myapp/
-CMD [ "java", "-jar", "oauth.jar" ]
-EXPOSE 8080

@@ -1,5 +1,11 @@
-FROM openjdk
-WORKDIR /usr/src/myapp
-COPY . /usr/src/myapp/
-CMD [ "java", "-jar", "oauth.jar" ]
-EXPOSE 8080
+# Use the official MySQL image as the base image
+FROM mysql:latest
+
+# Environment variables to set the root password
+ENV MYSQL_ROOT_PASSWORD=root
+
+# Copy SQL script to initialize the database
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# Expose the default MySQL port
+EXPOSE 3306

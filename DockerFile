@@ -4,6 +4,11 @@ FROM mysql:latest
 # Environment variables to set the root password
 ENV MYSQL_ROOT_PASSWORD=root
 
+# Create a database and user
+ENV MYSQL_DATABASE=notes_db
+# ENV MYSQL_USER=myuser
+# ENV MYSQL_PASSWORD=mypassword
+
 # Copy SQL script to initialize the database
 COPY init.sql /docker-entrypoint-initdb.d/
 

@@ -97,7 +97,7 @@
 >docker build -t myubuntu . <br>
 
 ### add local files to docker container
->docker cp file_name container_id: /directory
+>docker cp file_name container_id: /directory<br>
 >example : docker cp file.txt d817c9bc336f: /usr/share/nginx/html
 
 

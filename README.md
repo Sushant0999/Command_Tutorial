@@ -96,6 +96,10 @@
 >docker build -t [imageName] .(here '.' means same whole directory) <br>
 >docker build -t myubuntu . <br>
 
+### add local files to docker container
+>docker cp file_name container_id: /directory
+>example : docker cp file.txt d817c9bc336f: /usr/share/nginx/html
+
 
 ### pushing dockerImage on docker hub 
 ```
